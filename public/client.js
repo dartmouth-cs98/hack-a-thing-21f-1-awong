@@ -1,3 +1,9 @@
+/*
+*   Alex Wong
+*   CS 98, Hackathon
+*   Followed Stripe tutorial: https://stripe.com/docs/payments/integration-builder    
+*/
+
 var stripe = Stripe("pk_test_51JZmYCFTKFTNoa67Bkl3CHDWFxHi7OqMMwWJIj3e5K0On7B7Ar7MBkKIL06w6phX7REtPmT9d95Wbn80nFV2NHM100U02aZCLM");
 
 // dummy variable for now
@@ -18,6 +24,7 @@ fetch("/create-payment-intent", {
     .then(function(data) {
         var elements = stripe.elements();
 
+        // from Stripe, given CSS styling, https://stripe.com/docs/checkout/integration-builder
         var style = {
             base: {
               color: "#32325d",
@@ -68,12 +75,6 @@ var payWithCard = function(stripe, card, clientSecret) {
             }
         });
 };
-
-// optional styling the form object
-
-// optional catching card errors as form is updated
-
-// optinoal displaying error in processing payment
 
 // optional success message and animations
 var orderComplete = function(paymentIntentId) {

@@ -1,6 +1,10 @@
-/* copied from Stripe sample code */
+/* 
+ * Alex Wong
+ * CS 98, Hackathon
+ * Copied from Stripe sample code: https://stripe.com/docs/payments/integration-builder
+ */
 
-/* Variables */
+ /* Variables */
 * {
   box-sizing: border-box;
 }

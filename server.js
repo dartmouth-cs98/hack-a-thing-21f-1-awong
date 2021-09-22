@@ -1,3 +1,9 @@
+/*
+*   Alex Wong
+*   CS 98, Hackathon 1
+*   Followed Stripe Tutorial: https://stripe.com/docs/payments/integration-builder
+*/
+
 const express = require("express");
 const app = express();
 
